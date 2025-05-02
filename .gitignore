@@ -1,0 +1,46 @@
+# Node dependencies (if using npm or a build system)
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build output (if you're using a bundler like Vite, Webpack, or CRA)
+dist/
+build/
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# System files and editors
+.vscode/
+.idea/
+*.swp
+
+# Environment variables or secrets (for APIs or mail services)
+.env
+.env.*
+
+# Shell config (you don't want to accidentally commit these)
+.bash_profile
+.zshrc
+.ssh/
+*.pem
+*.key
+*.crt
+*.pub
+id_rsa
+id_ed25519
+id_*
+bashrc
+
+# Optional: exclude public asset folders you don't want versioned
+/assets/uploads/
+
+

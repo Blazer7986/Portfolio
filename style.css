@@ -19,13 +19,11 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
-li {
+/*li {
     float: left;
     border-right: 1px soild grey;
-}
-li:last-child {
-    border-right: none;
-}
+}*/
+
 nav a {
     display: block;
     color: white;
@@ -34,7 +32,7 @@ nav a {
     background-color: black;
     text-decoration: none;
 }
-a:hover {
+nav a:hover {
     background-color: blueviolet;
 }
 ul {
@@ -42,7 +40,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: fixed;
     width: 100%;
 }
 .active {
