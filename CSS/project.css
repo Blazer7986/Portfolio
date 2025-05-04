@@ -1,0 +1,66 @@
+
+/* All styles for the Projects Layout! */
+* {
+    box-sizing: border-box;
+}
+button {
+    font-size: 22px;
+}
+.row {
+    margin:8px -16px;
+    flex-grow: 1;
+    padding: 20px;
+}
+/* Add padding between each column*/
+.row, .row > .column {
+    padding: 8px;
+}
+/* Create four equal columns that float next to each other. */
+.column {
+    float: left;
+    width: 25%;
+    display: none;
+}
+/* Clear floats after rows. */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    background-color: plum;
+    padding: 10px;
+}
+/* Added to the filtered elements. */
+.show {
+    display: block;
+}
+#myBtnContainer {
+    background-color: whitesmoke;
+    padding: 20px;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: lightcoral;
+}
+.btn.active {
+    background-color: lightcoral;
+    color: aliceblue;
+    border: none;
+    padding: 15px 15px;
+    outline: none;
+    cursor: pointer;
+}
+.content h3 {
+    text-align: center;
+}

@@ -1,0 +1,164 @@
+/* General Page Layout with navigation. */
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    text-align: center;
+    font-size: 20px;
+    border: 2px;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+}
+head {
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    color: #800080;
+}
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 15px;
+    background-color: purple;
+    color: white;
+}
+.main-nav {
+    display: flex;
+    background-color: black;
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 10px;
+    justify-content: flex-start;
+    width:100%;
+    gap: 40px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 10px;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+.main-nav a:hover {
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+.active {
+    background-color: blueviolet;
+}
+
+
+/* Unique Code To Projects Pages*/
+body {
+    margin: 0;
+}
+img {
+    vertical-align: middle;
+}
+.mySlides img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 950px;
+    border: 5px solid purple;
+    text-align: center;
+}
+/* Hide the images by default */
+.mySlides {
+    background-color: black;
+    display: none;
+    text-align: center;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: lightslategray;
+    font-weight: bold;
+    font-size: 60px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: purple;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: purple;
+    padding: 2px 16px;
+    color: white;
+    font-size: 30px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 25%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+    width: 100%;
+}
+.active, .demo:hover {
+    opacity: 1;
+}
+/* Change the format of videos*/
+iframe {
+    border: 10px solid purple;
+    display: flex;
+    margin: 40px auto;
+}
+button {
+    display: flex;
+    margin: 20px 40px;
+    padding: 20px; 
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: blueviolet;
+}

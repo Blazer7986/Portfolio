@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTC-8" />
+        <meta name = "viewpoint" content="width=device-width, initial-scale=1.0" />
+        <title> Trash Bin Project </title>
+        
+        <link rel="stylesheet" href="../CSS/sideshow.css" />
+    </head>
+    <body> 
+        <header> 
+            <img src="stars.png" >
+            <nav class = "main-nav">
+                <a href = "../homepage.htm"> About </a>
+                <a href = "../projects.htm"> Projects </a>
+                <a href = "../contact.htm"> Contact </a>
+            </nav>
+        </header>
+        <main>
+            <h1 style="text-align:center"> Trash Bin Project</h1>
+            <div class="container">
+            <div class="mySlides">
+                <div class="numbertext"> 1 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/sketch.png"> 
+                    <img src="../Images/Projects/sketch.png" style="width:100%"> </a>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 2 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/3D-Model.png"> 
+                    <img src="../Images/Projects/3D-Model.png" style="width:100%"> </a>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 3 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/TrashBin1.png"> 
+                    <img src="../Images/Projects/TrashBin1.png" style="width:100%"> </a>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 4 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/TrashBin2.png"> 
+                    <img src="../Images/Projects/TrashBin2.png" style="width:100%"> </a>
+            </div>
+                
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/sketch.png" style="width:100%" 
+                    onclick="currentSlide(1)" alt="Sketch">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/3D-Model.png" style="width:100%" 
+                    onclick="currentSlide(2)" alt="3D Model">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/TrashBin1.png" style="width:100%" 
+                    onclick="currentSlide(3)" alt="Trash Bin Model #1">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/TrashBin2.png" style="width:100%" 
+                    onclick="currentSlide(4)" alt="Trash Bin Model #2">
+                </div>   
+            </div>
+            </div>
+            <!-- Project Details -->
+            <div>
+                <h1 style="padding-left: 40px;"> Description </h1>
+                <p style="padding-left: 40px; font-size: 20px"> 
+                    <span style="margin-left: 2em;"> 
+                        This project was intailate during my college senior year. 
+                    </span>
+                </p>
+            </div>
+            <h1 style="padding-left: 40px;"> Power Point Presentation </h1>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTPP4amyTeu98lsZSauBtQSusfRtDmX-rVN1I8kuGYFq1Gun4o9gKGzv3_yotV3mJFImR_ukB4Gu_fQ/pubembed?start=false&loop=true&delayms=3000" 
+                frameborder="0" width="960" height="569" allowfullscreen="true" 
+                mozallowfullscreen="true" webkitallowfullscreen="true" >
+            </iframe>
+
+            <!-- Button to back to projects. -->
+            <a href="../projects.htm"> <button> Back To Projects</button> </a>
+        </main>
+        <footer> 
+            <p> &copy; Vianey's Portfolio 2025 </p>
+        </footer>
+        <script src="../JS/slides.js"></script>  
+    </body>
+</html>
