@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTC-8" />
+        <meta name = "viewpoint" content="width=device-width, initial-scale=1.0" />
+        <title> Trash Bin Project </title>
+        
+        <link rel="stylesheet" href="../CSS/sideshow.css" />
+    </head>
+    <body> 
+        <header> 
+            <img src="../Images/rose.png" style="width: 15%;">
+            <nav class = "main-nav">
+                <a href = "../homepage.htm"> About </a>
+                <a href = "../projects.htm"> Projects </a>
+                <a href = "../contact.htm"> Contact </a>
+            </nav>
+        </header>
+        <main>
+            <h1 style="text-align:center; font-size:50px"> Fantasy League Database Website </h1>
+            <div class="container">
+            <div class="mySlides">
+                <div class="numbertext"> 1 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/Database1/ERD .jpeg"> 
+                    <img src="../Images/Projects/Database1/ERD .jpeg" style="width:100%"> </a>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 2 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/Database1/Login.jpeg"> 
+                    <img src="../Images/Projects/Database1/Login.jpeg" style="width:100%"> </a>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 3 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/Database1/User.jpeg"> 
+                    <img src="../Images/Projects/Database1/User.jpeg" style="width:100%"> </a>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"> 4 / 4 </div>
+                <a  target="_blank" href="../Images/Projects/Database1/Create.jpeg"> 
+                    <img src="../Images/Projects/Database1/Create.jpeg" style="width:100%"> </a>
+            </div>
+                
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/Database1/ERD .jpeg" style="width:100%" 
+                    onclick="currentSlide(1)" alt="Entity Relationship Diagram">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/Database1/Login.jpeg" style="width:100%" 
+                    onclick="currentSlide(2)" alt="Login Or Sign Up Section">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/Database1/User.jpeg" style="width:100%" 
+                    onclick="currentSlide(3)" alt="User Screen Login">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="../Images/Projects/Database1/Create.jpeg" style="width:100%" 
+                    onclick="currentSlide(4)" alt="League Create Form">
+                </div>   
+            </div>
+            </div>
+            <!-- Project Details -->
+            <div class = "margins" style="background-color: #2e2348; margin-top:40px;">
+                <h1 style="color: plum;"> Description </h1>
+                <p style="color: plum;font-size:22px;"> 
+                    <span style="margin-left: 2em;"> 
+                        This website will be used by users who would like to manage leagues, 
+                        teams, players and the interactions between these entities in an 
+                        Fantasy Sports League environment. 
+                    </span>
+                </p>
+            </div>
+            <div class="margins" id="color2">
+                <h1> Website Overview </h1>
+                <video id="myVideo" width="640" height="360" autoplay muted loop>
+                    <source src="../Images/Projects/Database1/Web.mp4" type="video/mp4"> 
+                </video>
+            </div>
+            <div class="margins">
+                <h1> Technical & Soft Skills Used </h1>
+                <ul style="font-size: 20px">
+                    <li> Front-end Development (HTML, CSS, Javascript, PHP) </li>
+                    <li> Back-end Development: Basic SQL & mySQL </li>
+                    <li> Teamwork & Collaboration </li>
+                    <li> Time Management </li>
+                </ul>
+            </div>
+            <!-- Button to back to projects. -->
+            <a href="../projects.htm"> <button> Back To Projects</button> </a>
+        </main>
+        <footer> 
+            <p> &copy; Vianey's Portfolio 2025 </p>
+        </footer>
+        <script src="../JS/slides.js"></script> 
+        <script src="../JS/video-play.js"></script> 
+    </body>
+</html>

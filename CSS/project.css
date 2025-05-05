@@ -154,3 +154,9 @@ button {
 .content h3 {
     text-align: center;
 }
+.content a {
+    color: black;
+}
+.content a:hover {
+    color: purple;
+}
