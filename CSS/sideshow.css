@@ -67,7 +67,7 @@ img {
     position: relative;
     margin: 0 auto;
     max-width: 950px;
-    border: 5px solid purple;
+    border: 5px solid #2e2348;
     text-align: center;
 }
 /* Hide the images by default */
@@ -121,10 +121,10 @@ img {
 /* Container for image text */
 .caption-container {
     text-align: center;
-    background-color: purple;
-    padding: 2px 16px;
-    color: white;
-    font-size: 30px;
+    background-color: #2e2348;
+    padding: 2px 2px;
+    color: plum;
+    font-size: 40px;
 }
 .row:after {
     content: "";
@@ -146,7 +146,7 @@ img {
 }
 /* Change the format of videos*/
 iframe {
-    border: 10px solid purple;
+    border: 5px solid purple;
     display: flex;
     margin: 40px auto;
 }
@@ -161,4 +161,16 @@ button {
 }
 button:hover {
     background-color: blueviolet;
+}
+.margins {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#color1 {
+    background-color:  #2e2348;
+}
+#color2 {
+    background-color: #f1b7f3;
 }

@@ -16,26 +16,56 @@
             </nav>
         </header>
         <main>
-            <section id = "contact"> 
-                <h2> Contact </h2>
+            <div class = "contact">
+                <section id="message">
+                    <h2> A Personal Message </h2>
+                    <p> Thank you for viewing my website. If you have a question, a 
+                        collobration idea or want to talk about a project. Feel free to 
+                        reach out to any of my socials. I will love to connect!
+                    </p>
+                </section>
+                <aside id = "c-form"> 
+                    <h2 style="color: navy;"> Contact Me </h2>
+                    <form action="https://formspree.io/f/mqaqqznq" method="post"> 
+                        <label for="name" style="color: navy;"> Name: </label> <br>
+                        <input type="text" name="name" required> <br> <br>
+                        <label for="email" style="color: navy;"> Email: </label> <br>
+                        <input type="email" name="_replyto" required> <br> <br>
+                        <label for="message" style="color: navy;"> Message: </label> <br>
+                        <textarea name="message" rows="5" required></textarea> <br><br>
+                        <button type="submit"> Send </button>
+                    </form>
+                </aside>
+            </div>
+            <section id = "socials"> 
+                <h2> Socials </h2>
                 <ul> 
                     <li> Business Email: 
                         <a href="mailto:vianeyr8624@gamil.com"> vianeyr8624@gmail.com </a> 
                     </li>
                     <li> LinkedIn: 
                         <a href="https://linkedin.com/in/vianey-rivera-b21326168"
-                            target="_blank"> /vianey-rivera </a> 
+                            target="_blank"> vianey-rivera </a> 
                     </li>
                     <li> GitHub: 
                         <a href="https://github.com/Blazer7986"
-                            target="_blank"> /Blazer7986 </a> 
+                            target="_blank"> Blazer7986 </a> 
                     </li>
                     <!-- Include other ways to conatct me. -->
                 </ul>
             </section>
+            <section id = "recuit">
+                <h2> Exploring My Job Search </h2>
+                <p> I'm open for recruitment on-site in New York City and comfortable 
+                    working remote from home. Check out my resume and the rest of my 
+                    Portfolio website if you havn't done so yet. 
+                </p>
+                <a href="Images/Files/resume.png" target="_blank"> <button> Resume </button> </a>
+            </section>
+
         </main>
         <footer> 
-            <p> &copy; Vianey's Portfolio 2025 </p>
+            <p style="color: white;"> &copy; Vianey's Portfolio 2025 </p>
         </footer>
         <script src="JS/index.js"></script> 
     </body>
