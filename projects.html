@@ -1,127 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTC-8" />
-        <meta name = "viewpoint" content="width=device-width, initial-scale=1.0" />
-        <title> Projects </title>
-        <link rel="stylesheet" href="CSS/project.css" />
-    </head>
-    <body> 
-        <header> 
-            <img src="Images/rose.png" style="width: 10%;">
-            <h1> Projects </h1>
-            <nav class = "main-nav">
-                <a href = "index.html"> About </a>
-                <a href = "projects.html"> Projects </a> 
-                <a href = "contact.html"> Contact </a>
-            </nav>
-        </header>
-        <main>
-            <!-- Projects Unquie Code -->
-            <div id = "myBtnContainer">
-                <button class = "btn active" 
-                        onclick="filterSelection('all')"> Show All </button>
-                <button class = "btn" 
-                        onclick="filterSelection('college')"> College </button>
-                <button class = "btn" 
-                        onclick="filterSelection('unreal')"> Unreal </button>
-                <button class = "btn" 
-                        onclick="filterSelection('blender')"> Blender </button>
-            </div>
-            <!-- Projects Gallery Grid -->
-            <div class = "row"> 
-                <div class = "column college"> 
-                    <div class = "content" > 
-                        <img src="Images/Projects/Trash/TrashBin1.png" alt="Trash" >
-                        <h4> <a href = "Projects/Trash.html" > Clean Cycle's Trash Bin </a> </h4>
-                        <p> A trash bin that can track and detect handmovements.
-                        </p>
-                    </div>
-                </div>
-                <div class = "column college"> 
-                    <div class = "content" > 
-                        <img src="Images/Projects/Database1/Login.jpeg" alt="Database">
-                        <h4> <a href = "Projects/Database1.html" > Fantasy League Database Website </a> </h4>
-                        <p> A Database project that can create Baseball Game tourament with
-                            your teams. <br> <br> <br>
-                        </p>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="CSS/project.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Images/rose.png" style="width: 10%" />
+      <h1>Projects</h1>
+      <nav class="main-nav">
+        <a href="index.html"> About </a>
+        <a href="projects.html"> Projects </a>
+        <a href="contact.html"> Contact </a>
+      </nav>
+    </header>
+    <main>
+      <!-- Projects Unquie Code -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">
+          Show All
+        </button>
+        <button class="btn" onclick="filterSelection('college')">
+          College
+        </button>
+        <button class="btn" onclick="filterSelection('unreal')">Unreal</button>
+        <button class="btn" onclick="filterSelection('blender')">
+          Blender
+        </button>
+      </div>
+      <!-- Projects Gallery Grid -->
+      <div class="row">
+        <div class="column college">
+          <div class="content">
+            <img src="Images/Projects/Trash/TrashBin1.png" alt="Trash" />
+            <h4><a href="Projects/Trash.html"> Clean Cycle's Trash Bin </a></h4>
+            <p>A trash bin that can track and detect handmovements.</p>
+          </div>
+        </div>
+        <div class="column college">
+          <div class="content">
+            <img src="Images/Projects/Database1/Login.jpeg" alt="Database" />
+            <h4>
+              <a href="Projects/Database1.html">
+                Fantasy League Database Website
+              </a>
+            </h4>
+            <p>
+              A Database project that can create Baseball Game tourament with
+              your teams. <br />
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
 
-                <div class = "column blender"> 
-                    <div class = "content" > 
-                        <img src="Images/Projects/Donuts/Donuts1.png" alt="3D-Models">
-                        <h4> <a href = "Projects/Donuts.html" > Blender Donut Tray </a> </h4>
-                        <p> A dounut Tray using all features from Blender including 
-                            3D Modeling, lighting, and etc. <br> <br> <br>
-                        </p>
-                    </div>
-                </div>
-                <div class = "column blender"> 
-                    <div class = "content" > 
-                        <img src="Images/Projects/Sushi/Basic_Sushi.png" alt="3D-Models">
-                        <h4> <a href = "Projects/Sushi.html" > Blender Sushi Platter </a> </h4>
-                        <p> An arrangement of sushi platters and a soysause container that 
-                            is cartoony and enticing for viewers. <br>  <br> <br>
-                        </p>
-                    </div>
-                </div>
+        <div class="column blender">
+          <div class="content">
+            <img src="Images/Projects/Donuts/Donuts1.png" alt="3D-Models" />
+            <h4><a href="Projects/Donuts.html"> Blender Donut Tray </a></h4>
+            <p>
+              A dounut Tray using all features from Blender including 3D
+              Modeling, lighting, and etc. <br />
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="column blender">
+          <div class="content">
+            <img src="Images/Projects/Sushi/Basic_Sushi.png" alt="3D-Models" />
+            <h4><a href="Projects/Sushi.html"> Blender Sushi Platter </a></h4>
+            <p>
+              An arrangement of sushi platters and a soysause container that is
+              cartoony and enticing for viewers. <br />
+              <br />
+              <br />
+            </p>
+          </div>
+        </div>
 
-                <div class = "column unreal"> 
-                    <div class = "content" > 
-                        <img src="blank" alt = "Pixel">
-                        <h4> <a href = "Projects/Pixel1.html" > Unreal Project #1 </a> </h4>
-                        <p> Create a 2D Pixel Platform videogame in Unreal Engine. 
-                            Check out the link on <a href = "Ichio"> Ichio </a> .
-                        </p>
-                    </div>
-                </div>
-                <div class = "column unreal"> 
-                    <div class = "content" > 
-                        <img src="blank" alt = "Card">
-                        <h4> <a href = "Projects/Card.html" > Unreal Project #2 </a> </h4>
-                        <p> Create a Story Card Game that can be play with other players 
-                            and even play with a Bot. Please check it out on my game account.
-                        </p>
-                    </div>
-                </div>
-                <!-- Add more projects!!! -->
-            </div>
+        <div class="column unreal">
+          <div class="content">
+            <img src="blank" alt="Pixel" />
+            <h4><a href="Projects/Pixel1.html"> Unreal Project #1 </a></h4>
+            <p>
+              Create a 2D Pixel Platform videogame in Unreal Engine. Check out
+              the link on <a href="Ichio"> Ichio </a> .
+            </p>
+          </div>
+        </div>
+        <div class="column unreal">
+          <div class="content">
+            <img src="blank" alt="Card" />
+            <h4><a href="Projects/Card.html"> Unreal Project #2 </a></h4>
+            <p>
+              Create a Story Card Game that can be play with other players and
+              even play with a Bot. Please check it out on my game account.
+            </p>
+          </div>
+        </div>
+        <!-- Add more projects!!! -->
+      </div>
 
-            <!-- Add possibly my credentials for easier access to contacts. -->
-            <aside>
-                <section id = "Short-contact"> 
-                    <h3 style="text-align: center;background-color:white;font-size:23px;"> 
-                        Contact </h3>
-                    <ul style="font-size:18px;"> 
-                        <li> <a href="mailto:vianeyr8624@gamil.com"> Gmail </a> </li>
-                        <li> <a href="https://linkedin.com/in/vianey-rivera-b21326168"
-                                target="_blank"> LinkedIn </a> 
-                        </li>
-                        <li> <a href="https://github.com/Blazer7986"
-                                target="_blank"> GitHub </a> 
-                        </li>
-                        <!-- Include other ways to conatct me. -->
-                    </ul>
-                </section>
-                <section id = "Reccomanded"> 
-                    <h3 style="text-align: center;background-color:white;font-size:23px;"> 
-                        Reccomanded </h3>
-                    <article>
-                        <h5> <a href = "Articles/Article.html" > My Unreal Engine Experience </a> </h5> 
-                        <p style="font-size:18px;"> Read of my expereince on my article page. </p>
-                    </article>
-                    <article>
-                        <h5> <a href = "Articles/Article.html" > My Blender Experience </a> </h5> 
-                        <p style="font-size:18px;"> Read of my expereince on my article page. </p>
-                    </article>
-                </section>
-            </aside>
-        </main>
-        <footer> 
-            <p style="color: white;"> &copy; Vianey's Portfolio 2025 </p>
-        </footer>
+      <!-- Add possibly my credentials for easier access to contacts. -->
+      <aside>
+        <section id="Short-contact">
+          <h3
+            style="text-align: center; background-color: white; font-size: 23px"
+          >
+            Contact
+          </h3>
+          <ul style="font-size: 18px">
+            <li><a href="mailto:vianeyr8624@gamil.com"> Gmail </a></li>
+            <li>
+              <a
+                href="https://linkedin.com/in/vianey-rivera-b21326168"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Blazer7986" target="_blank">
+                GitHub
+              </a>
+            </li>
+            <!-- Include other ways to conatct me. -->
+          </ul>
+        </section>
+        <section id="Reccomanded">
+          <h3
+            style="text-align: center; background-color: white; font-size: 23px"
+          >
+            Reccomanded
+          </h3>
+          <article>
+            <h5>
+              <a href="Articles/Article.html"> My Unreal Engine Experience </a>
+            </h5>
+            <p style="font-size: 18px">
+              Read of my expereince on my article page.
+            </p>
+          </article>
+          <article>
+            <h5><a href="Articles/Article.html"> My Blender Experience </a></h5>
+            <p style="font-size: 18px">
+              Read of my expereince on my article page.
+            </p>
+          </article>
+        </section>
+      </aside>
+    </main>
+    <footer>
+      <p style="color: white">&copy; Vianey's Portfolio 2025</p>
+    </footer>
 
-        <script src="JS/index.js"></script>  
-    </body>
+    <script src="JS/index.js"></script>
+  </body>
 </html>

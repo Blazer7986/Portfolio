@@ -15,6 +15,9 @@ head {
 h1 {
     color: #800080;
 }
+h2 {
+    font-size: 30px;
+}
 footer {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;

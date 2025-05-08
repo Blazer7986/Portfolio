@@ -1,110 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTC-8" />
-        <meta name = "viewpoint" content="width=device-width, initial-scale=1.0" />
-        <title> Trash Bin Project </title>
-        
-        <link rel="stylesheet" href="../CSS/sideshow.css" />
-    </head>
-    <body> 
-        <header> 
-            <img src="../Images/rose.png" style="width: 15%;">
-            <nav class = "main-nav">
-                <a href = "../index.html"> About </a>
-                <a href = "../projects.html"> Projects </a>
-                <a href = "../contact.html"> Contact </a>
-            </nav>
-        </header>
-        <main>
-            <h1 style="text-align:center; font-size:50px"> Blender Donut Tray </h1>
-            <div class="container">
-            <div class="mySlides">
-                <div class="numbertext"> 1 / 4 </div>
-                <a  target="_blank" href="../Images/Projects/Donuts/Donuts1.png"> 
-                    <img src="../Images/Projects/Donuts/Donuts1.png" style="width:100%"> </a>
-            </div>
-            <div class="mySlides">
-                <div class="numbertext"> 2 / 4 </div>
-                <a  target="_blank" href="../Images/Projects/Donuts/Donuts2.png"> 
-                    <img src="../Images/Projects/Donuts/Donuts2.png" style="width:100%"> </a>
-            </div>
-            <div class="mySlides">
-                <div class="numbertext"> 3 / 4 </div>
-                <a  target="_blank" href="../Images/Projects/Donuts/Donuts3.png"> 
-                    <img src="../Images/Projects/Donuts/Donuts3.png" style="width:100%"> </a>
-            </div>
-            <div class="mySlides">
-                <div class="numbertext"> 4 / 4 </div>
-                <a  target="_blank" href="../Images/Projects/Donuts/Donuts4.png"> 
-                    <img src="../Images/Projects/Donuts/Donuts4.png" style="width:100%"> </a>
-            </div>
-                
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <title>Trash Bin Project</title>
 
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
+    <link rel="stylesheet" href="../CSS/sideshow.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../Images/rose.png" style="width: 15%" />
+      <nav class="main-nav">
+        <a href="../index.html"> About </a>
+        <a href="../projects.html"> Projects </a>
+        <a href="../contact.html"> Contact </a>
+      </nav>
+    </header>
+    <main>
+      <h1 style="text-align: center; font-size: 50px">Blender Donut Tray</h1>
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <a target="_blank" href="../Images/Projects/Donuts/Donuts1.png">
+            <img
+              src="../Images/Projects/Donuts/Donuts1.png"
+              style="width: 100%"
+            />
+          </a>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <a target="_blank" href="../Images/Projects/Donuts/Donuts2.png">
+            <img
+              src="../Images/Projects/Donuts/Donuts2.png"
+              style="width: 100%"
+            />
+          </a>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <a target="_blank" href="../Images/Projects/Donuts/Donuts3.png">
+            <img
+              src="../Images/Projects/Donuts/Donuts3.png"
+              style="width: 100%"
+            />
+          </a>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <a target="_blank" href="../Images/Projects/Donuts/Donuts4.png">
+            <img
+              src="../Images/Projects/Donuts/Donuts4.png"
+              style="width: 100%"
+            />
+          </a>
+        </div>
 
-            <div class="row">
-                <div class="column">
-                <img class="demo cursor" src="../Images/Projects/Donuts/Donuts1.png" style="width:100%" 
-                    onclick="currentSlide(1)" alt="Front View">
-                </div>
-                <div class="column">
-                <img class="demo cursor" src="../Images/Projects/Donuts/Donuts2.png" style="width:100%" 
-                    onclick="currentSlide(2)" alt="Closer View #1">
-                </div>
-                <div class="column">
-                <img class="demo cursor" src="../Images/Projects/Donuts/Donuts3.png" style="width:100%" 
-                    onclick="currentSlide(3)" alt="Closer View #2">
-                </div>
-                <div class="column">
-                <img class="demo cursor" src="../Images/Projects/Donuts/Donuts4.png" style="width:100%" 
-                    onclick="currentSlide(4)" alt="Semi-top View">
-                </div>   
-            </div>
-            </div>
-            <!-- Project Details -->
-            <div class = "margins" style="background-color: #2e2348; margin-top:40px;">
-                <h1 style="color: plum;"> Description </h1>
-                <p style="color: plum;font-size:22px;"> 
-                    <span style="margin-left: 2em;"> 
-                        I followed a Blender tutorial from BlenderGru to make my very first 
-                        Blender project on my windows laptop. I follow the course throughly 
-                        to create a tray of donuts that seems semi-realistic. I use certain 
-                        Poligon assets to give a vivid blur background that doen't distract 
-                        the viewer from the main focus, the donuts. 
-                    </span>
-                </p>
-            </div>
-            <div class="margins" id="color2">
-                <h1> Donut Video </h1>
-                <video id="myVideo" width="640" height="360" autoplay muted loop>
-                    <source src="../Images/Projects/Donuts/Donuts.mp4" type="video/mp4"> 
-                </video>
-            </div>
-            <div class="margins">
-                <h1> Technical & Soft Skills Used </h1>
-                <ul style="font-size: 20px">
-                    <li> Blender </li>
-                        <ul>
-                            <li> 3D Modeling </li>
-                            <li> Scupltling </li>
-                            <li> Rendering </li>
-                            <li> Lighting </li>
-                        </ul>
-                    <li> Video Editing </li>
-                </ul>
-            </div>
-            <!-- Button to back to projects. -->
-            <a href="../projects.html"> <button> Back To Projects</button> </a>
-        </main>
-        <footer> 
-            <p> &copy; Vianey's Portfolio 2025 </p>
-        </footer>
-        <script src="../JS/slides.js"></script> 
-        <script src="../JS/video-play.js"></script> 
-    </body>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="../Images/Projects/Donuts/Donuts1.png"
+              style="width: 100%"
+              onclick="currentSlide(1)"
+              alt="Front View"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="../Images/Projects/Donuts/Donuts2.png"
+              style="width: 100%"
+              onclick="currentSlide(2)"
+              alt="Closer View #1"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="../Images/Projects/Donuts/Donuts3.png"
+              style="width: 100%"
+              onclick="currentSlide(3)"
+              alt="Closer View #2"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="../Images/Projects/Donuts/Donuts4.png"
+              style="width: 100%"
+              onclick="currentSlide(4)"
+              alt="Semi-top View"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Project Details -->
+      <div class="margins" style="background-color: #2e2348; margin-top: 40px">
+        <h2 style="color: plum">Description</h2>
+        <p style="color: plum; font-size: 22px">
+          <span style="margin-left: 2em">
+            I followed a Blender tutorial from BlenderGru to make my very first
+            Blender project on my windows laptop. I follow the course throughly
+            to create a tray of donuts that seems semi-realistic. I use certain
+            Poligon assets to give a vivid blur background that doen't distract
+            the viewer from the main focus, the donuts.
+          </span>
+        </p>
+      </div>
+      <div class="margins" id="color2">
+        <h2>Donut Video</h2>
+        <video id="myVideo" width="640" height="360" autoplay muted loop>
+          <source src="../Images/Projects/Donuts/Donuts.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="margins">
+        <h2>Technical & Soft Skills Used</h2>
+        <ul style="font-size: 20px">
+          <li>Blender</li>
+          <ul>
+            <li>3D Modeling</li>
+            <li>Scupltling</li>
+            <li>Rendering</li>
+            <li>Lighting</li>
+          </ul>
+          <li>Video Editing</li>
+        </ul>
+      </div>
+      <!-- Button to back to projects. -->
+      <a href="../projects.html"> <button>Back To Projects</button> </a>
+    </main>
+    <footer>
+      <p>&copy; Vianey's Portfolio 2025</p>
+    </footer>
+    <script src="../JS/slides.js"></script>
+    <script src="../JS/video-play.js"></script>
+  </body>
 </html>
