@@ -1,81 +1,190 @@
+.projects-container {
+    position: relative;
+    display: flex;
+    padding-bottom: 100px;
+    background-color: whitesmoke;
+}
 
-/* All styles for the Projects Layout! */
-* {
-    box-sizing: border-box;
-}
-header {
-    text-align: center;
-    font-size: 20px;
-    border: 2px;
-    background: linear-gradient(to right, #a18cd1, #fbc2eb);
-}
-head {
-    font-family: 'Times New Roman', Times, serif;
-}
-body {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
+/* Filter Section */
+#myBtnContainer {
+    background-color: #633b7d;
+    position: absolute;
+    top: -7.8px;
+    bottom: 0;
+    left: 0;
+
+    justify-content: start;
+    row-gap: 3px;
+    z-index: 5;
+
+    padding: 20px 20px;
+    width: 170px;
+
     display: flex;
     flex-direction: column;
+    transition: width 0.15s;
 }
-h1 {
-    font-size: 50px;
-}
-h1,h2 {
-    color: #800080;
-}
-h3 {
-    color: navy;
-}
-p {
+.btn {
+    border: none;
+    padding: 15px 15px;
+    background-color: wheat;
     color: black;
+    cursor: pointer;
 }
-section {
-    padding: 15px;
+.btn:hover {
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
 }
-footer {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    padding: 15px;
-    background-color: purple;
+.btn.active {
+    background-color: rgba(242, 90, 90, 0.833);
     color: white;
 }
-.main-nav {
-    display: flex;
-    background-color: black;
-    font-size: 20px;
-    margin: 0;
-    padding: 15px 10px;
-    justify-content: flex-start;
-    width:100%;
-    gap: 40px;
+button {
+    font-size: 22px;
 }
-.main-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 15px 10px;
-    display: inline-block;
-    transition: background-color 0.2s;
-}
-.main-nav a:hover {
-    background-color: blueviolet;
-    border-radius: 5px;
-}
-.active {
-    background-color: blueviolet;
-}
-main {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+.show {
+    display: block;
 }
 
-ul {
-    background-color: white;
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    z-index: 4;
+    margin-left: 215px;
+    transition: margin-left 0.15s;
 }
+.project-grid > .column.blender, 
+.project-grid > .column.college,
+.project-grid > .column.unreal {
+    padding-bottom: 10px;
+}
+.column {
+    display: none;
+}
+.column.show {
+    display: block;
+}
+
+@media (width >= 1400px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (1200px <= width < 1400px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (width < 1200px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (width < 900px) {
+    #myBtnContainer {
+        width: 120px;
+    }
+    .project-grid {
+        margin-left: 170px;
+    }
+}
+
+.column.college, 
+.column.blender, 
+.column.unreal {
+    background-color: #f1b7f3;
+    height: 500px;
+    border-radius: 5px;
+    border: 8px solid #f1b7f3;
+}
+.project-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    background-color: #f1b7f3;
+    margin-bottom: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content {
+    padding: 5px 15px;
+    background-color: #f1b7f3;
+    margin-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* limit to 4 lines */
+    -webkit-box-orient: vertical;
+}
+.content h4 {
+    text-align: center;
+}
+.content p {
+    font-size: 18px;
+}
+.content a {
+    color: black;
+    font-weight: 700;
+}
+.content a:hover {
+    color: purple;
+}
+
+/* Short Info Section*/
+.aside-page {
+    top: 0;
+    position: sticky;
+    background-color: rgb(191, 225, 255);
+    padding: 20px 20px;
+    height: 540px;
+}
+#short-contact {
+    text-align: center;
+    font-size: 23px;
+    border: 2px solid aliceblue;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#short-contact h3, #short-contact ul {
+    margin: 0;
+}
+#short-contact ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+} 
+#recommended {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px 15px;
+    border: 2px solid aliceblue;
+}
+#recommended h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+#recommended article {
+    font-size: 23px;
+}
+.article-web h5 {
+    margin-bottom: 10px;
+    margin-top: 18px;
+    font-size: 20px;
+}
+.article-web p {
+    font-size: 15px;
+    margin: 0;
+}
+
 aside {
     background-color: whitesmoke;
     flex: 1;
@@ -84,79 +193,4 @@ aside {
     top: 0;
     position: sticky;
 }
-article {
-    background-color: white;
-}
 
-/* Unique Code */
-button {
-    font-size: 22px;
-}
-.row {
-    margin:8px -16px;
-    flex-grow: 1;
-    padding: 20px;
-}
-/* Add padding between each column*/
-.row, .row > .column {
-    padding: 8px;
-}
-/* Create four equal columns that float next to each other. */
-.column {
-    float: left;
-    width: 25%;
-    display: none;
-}
-/* Clear floats after rows. */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.content {
-    background-color: #f1b7f3;
-    padding: 10px;
-    border-radius: 10px;
-}
-.content img {
-    width: 100%;
-}
-/* Added to the filtered elements. */
-.show {
-    display: block;
-}
-#myBtnContainer {
-    background-color: whitesmoke;
-    padding: 20px;
-    height: 100vh;
-    flex-direction: column;
-    display: flex;
-}
-.btn {
-    border: none;
-    outline: none;
-    padding: 15px 15px;
-    background-color: wheat;
-    color: black;
-    cursor: pointer;
-}
-.btn:hover {
-    background-color: lightcoral;
-}
-.btn.active {
-    background-color: lightcoral;
-    color: aliceblue;
-    border: none;
-    padding: 15px 15px;
-    outline: none;
-    cursor: pointer;
-}
-.content h3 {
-    text-align: center;
-}
-.content a {
-    color: black;
-}
-.content a:hover {
-    color: purple;
-}

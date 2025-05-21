@@ -1,0 +1,54 @@
+.contact-container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: top;
+}
+#message, #c-form {
+    flex: 1;
+    min-width: 350px;
+}
+#c-form {
+    height: 420px;
+    background-color: rgba(46, 146, 252, 0.387);
+    padding: 20px;
+    border-radius: 10px;
+}
+#c-form h2, #c-form p {
+    color: navy;
+}
+#c-form button {
+    background-color: rgba(0, 0, 128, 0.65);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px; 
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+#c-form button:hover {
+    background-color: rgba(0, 0, 128, 1);
+}
+#socials {
+    background-color: #f1b7f3;
+}
+#socials ul {
+    color: rgb(128, 0, 128);
+}
+.recruit-button {
+    background-color: rgba(128, 0, 128, 0.8);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.recruit-button:hover {
+    background-color: rgba(128, 0, 128, 1);
+}

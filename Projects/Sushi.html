@@ -3,51 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-    <title>Trash Bin Project</title>
+    <title>Blender Sushi Platter</title>
 
-    <link rel="stylesheet" href="../CSS/sideshow.css" />
+    <link rel="stylesheet" href="/CSS/sideshow.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
+    <link rel="stylesheet" href="/CSS/header.css" />
+
+    <script src="/JS/slides.js"></script>
+    <script src="/JS/video-play.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img src="../Images/rose.png" style="width: 15%" />
+      <div class="top-content">
+        <img src="/Images/star.png" alt="star" style="width: 10%" />
+        <img src="/Images/star.png" alt="star" style="width: 10%" />
+        <img src="/Images/star.png" alt="star" style="width: 10%" />
+      </div>
       <nav class="main-nav">
-        <a href="../index.html"> About </a>
-        <a href="../projects.html"> Projects </a>
-        <a href="../contact.html"> Contact </a>
+        <div class="left-side">
+          <a href="/index.html"> About </a>
+          <a href="/projects.html"> Projects </a>
+          <a href="/articles.html"> Articles </a>
+        </div>
+        <div class="right-side">
+          <a href="/contact.html"> Contact Me </a>
+        </div>
       </nav>
     </header>
     <main>
-      <h1 style="text-align: center; font-size: 50px">Blender Sushi Platter</h1>
-      <div class="container">
-        <div class="mySlides">
-          <a target="_blank" href="../Images/Projects/Sushi/Basic_Sushi.png">
-            <img
-              src="../Images/Projects/Sushi/Basic_Sushi.png"
-              style="width: 100%"
-            />
-          </a>
+      <section class="sideshow-container">
+        <h1>Blender Sushi Platter</h1>
+        <div class="sideshow">
+          <div class="mySlides">
+            <a target="_blank" href="/Images/Projects/Sushi/Basic_Sushi.png">
+              <img src="/Images/Projects/Sushi/Basic_Sushi.png" />
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
       <!-- Project Details -->
-      <div class="margins" style="background-color: #2e2348; margin-top: 40px">
-        <h2 style="color: plum">Description</h2>
-        <p style="color: plum; font-size: 22px">
+      <section id="description">
+        <h2>Description</h2>
+        <p>
           <span style="margin-left: 2em">
             I followed a Blender tutorial to create a sushi platter to get
             acustomed to the software. Hopfully can make greater, complex, or
             bigger projects in the future.
           </span>
         </p>
-      </div>
-      <div class="margins" id="color2">
+      </section>
+
+      <section id="website-overview">
         <h2>Sushi Platter Video</h2>
         <video id="myVideo" width="640" height="360" autoplay muted loop>
-          <source src="../Images/Projects/Sushi/Sushi.mp4" type="video/mp4" />
+          <source src="/Images/Projects/Sushi/Sushi.mp4" type="video/mp4" />
         </video>
-      </div>
-      <div class="margins">
+      </section>
+
+      <section id="project-skills">
         <h2>Technical & Soft Skills Used</h2>
-        <ul style="font-size: 20px">
+        <ul>
           <li>Blender</li>
           <ul>
             <li>3D Modeling</li>
@@ -56,14 +78,14 @@
           </ul>
           <li>Video Editing</li>
         </ul>
-      </div>
+      </section>
       <!-- Button to back to projects. -->
-      <a href="../projects.html"> <button>Back To Projects</button> </a>
+      <section id="back-button">
+        <a href="/projects.html"> <button>Back To Projects</button> </a>
+      </section>
     </main>
     <footer>
-      <p>&copy; Vianey's Portfolio 2025</p>
+      <p>&copy; Vianey Rivera's Portfolio 2025</p>
     </footer>
-    <script src="../JS/slides.js"></script>
-    <script src="../JS/video-play.js"></script>
   </body>
 </html>

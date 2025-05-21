@@ -1,0 +1,44 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    font-family: Raleway, Arial;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 45px;
+    color: #800080;
+}
+h2 {
+    font-size: 30px;
+    color: #800080;
+}
+h3 {
+    font-size: 24px;
+    color: navy;
+}
+p {
+    color: black;
+    font-size: 20px;
+}
+a {
+    font-size: 20px;
+}
+section {
+    padding: 20px 15px;
+}
+footer {
+    font-style: italic;
+    font-weight: 300;
+    padding: 15px 20px;
+    background-color: purple;
+    font-size: 15px;
+    z-index: 100;
+}
+footer p {
+    color: white;
+}

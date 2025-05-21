@@ -3,44 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="stylesheet" href="CSS/home.css" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img src="Images/rose.png" style="width: 10%" />
-      <h1>Contact</h1>
+      <div class="top-content">
+        <img src="Images/rose.png" alt="rose" style="width: 10%" />
+        <div class="project-author">
+          <h1>Projects</h1>
+        </div>
+        <img src="Images/rose.png" alt="rose" style="width: 10%" />
+      </div>
+
       <nav class="main-nav">
-        <a href="index.html"> About </a>
-        <a href="projects.html"> Projects </a>
-        <a href="contact.html"> Contact </a>
+        <div class="left-side">
+          <a href="index.html"> About </a>
+          <a href="projects.html"> Projects </a>
+          <a href="articles.html"> Articles </a>
+        </div>
+        <div class="right-side">
+          <a href="contact.html" class="active-page"> Contact Me </a>
+        </div>
       </nav>
     </header>
     <main>
-      <div class="contact">
-        <section id="message">
+      <section class="contact-container">
+        <div id="message">
           <h2>A Personal Message</h2>
           <p>
             Thank you for viewing my website. If you have a question, a
             collobration idea or want to talk about a project. Feel free to
             reach out to any of my socials. I will love to connect!
           </p>
-        </section>
+        </div>
         <aside id="c-form">
-          <h2 style="color: navy">Contact Me</h2>
+          <h2>Contact Me</h2>
           <form action="https://formspree.io/f/mqaqqznq" method="post">
-            <label for="name" style="color: navy"> Name: </label> <br />
+            <label for="name"> Name: </label> <br />
             <input type="text" name="name" required /> <br />
             <br />
-            <label for="email" style="color: navy"> Email: </label> <br />
+            <label for="email"> Email: </label> <br />
             <input type="email" name="_replyto" required /> <br />
             <br />
-            <label for="message" style="color: navy"> Message: </label> <br />
+            <label for="message"> Message: </label> <br />
             <textarea name="message" rows="5" required></textarea> <br /><br />
             <button type="submit">Send</button>
           </form>
         </aside>
-      </div>
+      </section>
       <section id="socials">
         <h2>Socials</h2>
         <ul>
@@ -66,7 +86,7 @@
           <!-- Include other ways to conatct me. -->
         </ul>
       </section>
-      <section id="recuit">
+      <section id="recruit">
         <h2>Exploring My Job Search</h2>
         <p>
           I'm open for recruitment on-site in New York City and comfortable
@@ -74,7 +94,7 @@
           Portfolio website if you havn't done so yet.
         </p>
         <a href="Images/Files/resume.png" target="_blank">
-          <button>Resume</button>
+          <button class="recruit-button">Resume</button>
         </a>
       </section>
     </main>

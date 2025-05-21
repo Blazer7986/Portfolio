@@ -4,71 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <title>Vianey Rivera's Portfolio</title>
-    <link rel="stylesheet" href="CSS/home.css" />
+
+    <!-- Style sheets-->
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="image-row">
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
-        <img src="Images/star.png" alt="repeat" />
+      <div class="top-content">
+        <img src="Images/rose.png" alt="rose" style="width: 10%" />
+        <div class="project-author">
+          <h1>Vianey Rivera</h1>
+          <p>Software Engineer | Full Stack Engineer | Game Developer</p>
+        </div>
+        <img src="Images/rose.png" alt="rose" style="width: 10%" />
       </div>
-      <h1>Vianey Rivera</h1>
-      <p>Software Engineer * Game Developer</p>
-      <img src="Images/rose.png" alt="rose" style="width: 10%" />
       <nav class="main-nav">
-        <a href="index.html"> About </a>
-        <a href="projects.html"> Projects </a>
-        <a href="contact.html"> Contact </a>
+        <div class="left-side">
+          <a href="index.html" class="active-page"> About </a>
+          <a href="projects.html"> Projects </a>
+          <a href="articles.html"> Articles </a>
+        </div>
+        <div class="right-side">
+          <a href="contact.html"> Contact Me </a>
+        </div>
       </nav>
     </header>
+
     <main>
-      <div class="profile">
-        <img src="Images/Profile.JPG" alt="Avatar" class="avatar" />
-        <div class="text">
+      <section class="gretting">
+        <img src="Images/Profile.JPG" alt="Avatar" class="avatar-picture" />
+        <div class="greeting-text">
           <h2>Hi, I'm Vianey Rivera!</h2>
           <p>
             I'm a NYU Computer Engineer Alumni passionate about interactive
             software, game mechanics, and full stack development.
           </p>
         </div>
-      </div>
-      <div class="preview">
-        <h2 style="color: white">Speciality</h2>
-        <p style="color: white">
+      </section>
+
+      <section class="speciality">
+        <h2>Speciality</h2>
+        <p>
           I specialize in Full-stack and Game development. I'm currently woking
           on a videogame project. I'm seeking job opperunties that would
           specializes in these careers.
         </p>
-      </div>
-      <div class="feature">
-        <h2 style="color: white">Feature Projects</h2>
-        <h3 style="color: #2e91fc">Clean Cycle Product Prototype</h3>
-        <p style="color: aliceblue">
-          Clean Cycle’s mission is to help inform people and organizations about
-          the problem of excessive MSW being carelessly or improperly discarded
-          and building up in public spaces and landfills daily.
-        </p>
-        <a href="Projects/Trash.html" style="color: white"> Go To Project </a>
+      </section>
 
-        <h3 style="color: #2e91fc">Fantasy League Database Website</h3>
-        <p style="color: aliceblue">
-          This website will be used by users who would like to manage leagues,
-          teams, players and the interactions between these entities in an
-          Fantasy Sports League environment.
+      <section class="feature-projects">
+        <h2>Feature Projects</h2>
+        <h3>Clean Cycle Product Prototype</h3>
+        <p>
+          &emsp;Clean Cycle&prime;s mission is to help inform people and
+          organizations about the problem of excessive MSW being carelessly or
+          improperly discarded and building up in public spaces and landfills
+          daily.
         </p>
-        <a href="Projects/Database1.html" style="color: white">
-          Go To Project
-        </a>
-      </div>
-      <div class="skills">
+        <a href="Projects/Trash.html"> Go To Project </a>
+
+        <h3>Fantasy League Database Website</h3>
+        <p>
+          &emsp;This website will be used by users who would like to manage
+          leagues, teams, players and the interactions between these entities in
+          an Fantasy Sports League environment.
+        </p>
+        <a href="Projects/Database1.html"> Go To Project </a>
+      </section>
+
+      <section class="skills">
         <h2>Skills/ Technological Tools</h2>
         <ul>
           <li>Web Development (HTML, CSS, Javascript)</li>
@@ -79,21 +91,24 @@
           <li>Basic SQL (mySQL, ProgeteSQL)</li>
           <li>React</li>
         </ul>
-      </div>
-      <div class="testamonials">
-        <h2 style="color: navy">Testamonials</h2>
+      </section>
+
+      <section class="testimonials">
+        <h2>Testimonials</h2>
         <!-- Include:
                 <h3 style="margin-left: 2em;"> Testamonial #1 </h3>
                 <p style="margin-left: 4em;">  Quote </p>
                 -->
-      </div>
-      <div class="action">
+      </section>
+
+      <section class="call-to-action">
         <h2>Call To Action</h2>
-        <p>Check out more of my projects through my menu bar.</p>
-      </div>
+        <p>Check out more of my projects and articles through my menu bar.</p>
+      </section>
     </main>
+
     <footer>
-      <p style="color: white">&copy; Vianey's Portfolio 2025</p>
+      <p>&copy; Vianey Rivera's Portfolio 2025</p>
     </footer>
   </body>
 </html>

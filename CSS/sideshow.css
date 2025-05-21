@@ -1,78 +1,16 @@
-/* General Page Layout with navigation. */
-* {
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
-header {
+
+.sideshow-container {
     text-align: center;
-    font-size: 20px;
-    border: 2px;
-    background: linear-gradient(to right, #a18cd1, #fbc2eb);
 }
-head {
-    font-family: 'Times New Roman', Times, serif;
-}
-h1 {
-    color: #800080;
-}
-h2 {
-    font-size: 30px;
-}
-footer {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    padding: 15px;
-    background-color: purple;
-    color: white;
-}
-.main-nav {
-    display: flex;
-    background-color: black;
-    font-size: 20px;
-    margin: 0;
-    padding: 15px 10px;
-    justify-content: flex-start;
-    width:100%;
-    gap: 40px;
-}
-.main-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 15px 10px;
-    display: inline-block;
-    transition: background-color 0.2s;
-}
-.main-nav a:hover {
-    background-color: blueviolet;
-    border-radius: 5px;
-}
-.active {
-    background-color: blueviolet;
-}
-
-
-/* Unique Code To Projects Pages*/
-body {
-    margin: 0;
-}
-img {
-    
-    width: 500px;
-}
-.mySlides img {
-    max-width: 70%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-/* Position the image container (needed to position the left and right arrows) */
-.container {
+.sideshow {
     position: relative;
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 1200px;
     border: 5px solid #2e2348;
     text-align: center;
+}
+.thumbnail {
+    padding: 0;
 }
 /* Hide the images by default */
 .mySlides {
@@ -80,26 +18,26 @@ img {
     display: none;
     text-align: center;
 }
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-    cursor: pointer;
+.mySlides:first-child {
+    display: block;
 }
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
+.mySlides img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: plum;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #2e2348;
+    padding: 8px 12px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: lightslategray;
-    font-weight: bold;
-    font-size: 60px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+    top: 0;
 }
+
 /* Position the "next button" to the right */
 .next {
     right: 0;
@@ -112,41 +50,81 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+    background-color: lightgray;
 }
-/* Number text (1/3 etc) */
-.numbertext {
-    color: purple;
-    font-size: 25px;
-    padding: 8px 12px;
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: lightslategray;
+    font-weight: 700;
+    font-size: 65px;
+    border-radius: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: color 0.15s, background-color 0.15s;
 }
+
 /* Container for image text */
 .caption-container {
+    display: block;
     text-align: center;
     background-color: #2e2348;
     padding: 2px 2px;
+}
+#caption {
     color: plum;
     font-size: 40px;
+    font-weight: 600;
 }
-.row:after {
+
+/* Small Images Row */
+.sideshow-row:after {
     content: "";
     display: table;
     clear: both;
 }
 /* Six columns side by side */
-.column {
+.sideshow-column {
     float: left;
     width: 25%;
+}
+.sideshow-column img {
+    width: 100%;
 }
 /* Add a transparency effect for thumnbail images */
 .demo {
     opacity: 0.6;
     width: 100%;
 }
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
 .active, .demo:hover {
     opacity: 1;
+}
+
+
+#description {
+    background-color: #2e2348; 
+    margin-top: 40px;
+    color: plum;
+}
+#description h2, #description p {
+    color: plum;
+}
+#description p {
+    font-size: 22px;
+}
+#website-overview {
+    background-color: #f1b7f3;
 }
 /* Change the format of videos*/
 iframe {
@@ -155,33 +133,34 @@ iframe {
     display: flex;
     margin: 40px auto;
 }
-button {
-    display: flex;
-    margin: 20px 40px;
-    padding: 20px; 
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-}
-button:hover {
-    background-color: blueviolet;
-}
-.margins {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-#color1 {
-    background-color:  #2e2348;
-}
-#color2 {
-    background-color: #f1b7f3;
-}
-video {
+#myVideo {
+    width: 640px;
+    height: 360px;
     border: 4px solid purple;
     background-color: purple;
     display: flex;
     margin: 20px auto;
 }
+
+#website-overview, #description, #project-skills {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#back-button {
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+#back-button button {
+    margin-left: 20px;
+    padding: 15px 20px; 
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+#back-button button:hover {
+    background-color: blueviolet;
+}
+

@@ -1,0 +1,83 @@
+header {
+    background: linear-gradient(to top, #a18cd1, #fbc2eb);
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+/* Top Page */
+.top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.top-content img, .top-content div {
+    flex: 1;
+    transition: width 0.15s, height 0.15s;
+}
+
+@media (width >= 1200px) {
+    .top-content img {
+        width: 250px;
+        height: 250px;
+    }
+} 
+@media (min-width: 760px) and (max-width: 1200px) {
+    .top-content img {
+        width: 200px;
+        height: 200px;
+    }
+} 
+@media (width < 759px ) {
+    .top-content img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.top-content div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.project-author {
+    text-align: center;
+    font-family: Roboto, Arial;
+}
+.project-author h1 {
+    font-weight: 800;
+}
+.project-author p {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/* Navigation Bar (Used In All HTML files)*/
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    background-color: black;
+    font-size: 22px;
+    padding: 10px 20px;
+}
+.left-side a, .right-side a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px 10px;
+    width: 100px;
+    transition: background-color 0.2s;
+}
+.left-side a:hover, .right-side a:hover {
+    background-color: #fbc2eb; 
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+.active-page {
+    color: black;
+    background-color: #a18cd1;
+}

@@ -3,111 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-    <title>Trash Bin Project</title>
+    <title>Clean Cycle's Trash Bin</title>
 
-    <link rel="stylesheet" href="../CSS/sideshow.css" />
+    <link rel="stylesheet" href="/CSS/sideshow.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
+    <link rel="stylesheet" href="/CSS/header.css" />
+
+    <script src="/JS/slides.js" defer></script>
+    <script src="/JS/video-play.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img src="../Images/rose.png" style="width: 15%" />
+      <div class="top-content">
+        <img src="/Images/star.png" alt="roses" style="width: 10%" />
+        <img src="/Images/star.png" alt="roses" style="width: 10%" />
+        <img src="/Images/star.png" alt="roses" style="width: 10%" />
+      </div>
       <nav class="main-nav">
-        <a href="../index.html"> About </a>
-        <a href="../projects.html"> Projects </a>
-        <a href="../contact.html"> Contact </a>
+        <div class="left-side">
+          <a href="/index.html"> About </a>
+          <a href="/projects.html"> Projects </a>
+          <a href="/articles.html"> Articles </a>
+        </div>
+        <div class="right-side">
+          <a href="/contact.html"> Contact Me </a>
+        </div>
       </nav>
     </header>
     <main>
-      <h1 style="text-align: center; font-size: 50px">
-        Clean Cycle's Trash Bin
-      </h1>
-      <div class="container">
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <a target="_blank" href="../Images/Projects/Trash/sketch.png">
-            <img
-              src="../Images/Projects/Trash/sketch.png"
-              style="width: 100%"
-            />
-          </a>
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <a target="_blank" href="../Images/Projects/Trash/3D-Model.png">
-            <img
-              src="../Images/Projects/Trash/3D-Model.png"
-              style="width: 100%"
-            />
-          </a>
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <a target="_blank" href="../Images/Projects/Trash/TrashBin1.png">
-            <img
-              src="../Images/Projects/Trash/TrashBin1.png"
-              style="width: 100%"
-            />
-          </a>
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <a target="_blank" href="../Images/Projects/Trash/TrashBin2.png">
-            <img
-              src="../Images/Projects/Trash/TrashBin2.png"
-              style="width: 100%"
-            />
-          </a>
-        </div>
+      <section class="sideshow-container">
+        <h1 style="text-align: center; font-size: 50px">
+          Clean Cycle's Trash Bin
+        </h1>
+        <div class="sideshow">
+          <section class="thumbnail">
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <a target="_blank" href="/Images/Projects/Trash/sketch.png">
+                <img src="/Images/Projects/Trash/sketch.png" />
+              </a>
+            </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <a target="_blank" href="/Images/Projects/Trash/3D-Model.png">
+                <img src="/Images/Projects/Trash/3D-Model.png" />
+              </a>
+            </div>
 
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <a target="_blank" href="/Images/Projects/Trash/TrashBin1.png">
+                <img src="/Images/Projects/Trash/TrashBin1.png" />
+              </a>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <a target="_blank" href="/Images/Projects/Trash/TrashBin2.png">
+                <img src="/Images/Projects/Trash/TrashBin2.png" />
+              </a>
+            </div>
 
-        <div class="row">
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="../Images/Projects/Trash/sketch.png"
-              style="width: 100%"
-              onclick="currentSlide(1)"
-              alt="Sketch"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="../Images/Projects/Trash/3D-Model.png"
-              style="width: 100%"
-              onclick="currentSlide(2)"
-              alt="3D Model"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="../Images/Projects/Trash/TrashBin1.png"
-              style="width: 100%"
-              onclick="currentSlide(3)"
-              alt="Trash Bin Model #1"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="../Images/Projects/Trash/TrashBin2.png"
-              style="width: 100%"
-              onclick="currentSlide(4)"
-              alt="Trash Bin Model #2"
-            />
-          </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </section>
+
+          <section class="caption-container">
+            <p id="caption"></p>
+          </section>
+
+          <section class="sideshow-row">
+            <div class="sideshow-column">
+              <img
+                class="demo cursor"
+                src="/Images/Projects/Trash/sketch.png"
+                onclick="currentSlide(1)"
+                alt="Sketch"
+              />
+            </div>
+            <div class="sideshow-column">
+              <img
+                class="demo cursor"
+                src="/Images/Projects/Trash/3D-Model.png"
+                onclick="currentSlide(2)"
+                alt="3D Model"
+              />
+            </div>
+            <div class="sideshow-column">
+              <img
+                class="demo cursor"
+                src="/Images/Projects/Trash/TrashBin1.png"
+                onclick="currentSlide(3)"
+                alt="Trash Bin Model #1"
+              />
+            </div>
+            <div class="sideshow-column">
+              <img
+                class="demo cursor"
+                src="/Images/Projects/Trash/TrashBin2.png"
+                onclick="currentSlide(4)"
+                alt="Trash Bin Model #2"
+              />
+            </div>
+          </section>
         </div>
-      </div>
+      </section>
+
       <!-- Project Details -->
-      <div class="margins" style="background-color: #2e2348; margin-top: 40px">
-        <h2 style="color: plum">Description</h2>
-        <p style="color: plum; font-size: 22px">
+      <section id="description">
+        <h2>Description</h2>
+        <p>
           <span style="margin-left: 2em">
             Clean Cycle’s mission is to help inform people and organizations
             about the problem of excessive MSW being carelessly or improperly
@@ -131,8 +143,9 @@
             sustainability from an individual or corporate standpoint.
           </span>
         </p>
-      </div>
-      <div class="margins" id="color2">
+      </section>
+
+      <section id="website-overview">
         <h2>Power Point Presentation</h2>
         <iframe
           src="https://docs.google.com/presentation/d/e/2PACX-1vTPP4amyTeu98lsZSauBtQSusfRtDmX-rVN1I8kuGYFq1Gun4o9gKGzv3_yotV3mJFImR_ukB4Gu_fQ/pubembed?start=false&loop=true&delayms=3000"
@@ -147,10 +160,11 @@
         <p style="font-size: 18px; margin-left: 2em; color: purple">
           Note: Embedded Video is not accessable.
         </p>
-      </div>
-      <div class="margins">
+      </section>
+
+      <section id="project-skills">
         <h2>Technical & Soft Skills Used</h2>
-        <ul style="font-size: 20px">
+        <ul>
           <li>Audrino C</li>
           <li>Wiring</li>
           <li>CAD Design</li>
@@ -158,13 +172,15 @@
           <li>Collaboration</li>
           <li>Teamwork</li>
         </ul>
-      </div>
+      </section>
+
       <!-- Button to back to projects. -->
-      <a href="../projects.html"> <button>Back To Projects</button> </a>
+      <section id="back-button">
+        <a href="../projects.html"> <button>Back To Projects</button> </a>
+      </section>
     </main>
     <footer>
-      <p>&copy; Vianey's Portfolio 2025</p>
+      <p>&copy; Vianey Rivera's Portfolio 2025</p>
     </footer>
-    <script src="../JS/slides.js"></script>
   </body>
 </html>
