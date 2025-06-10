@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-    <title>Projects 2</title>
+    <title>Projects</title>
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="CSS/project.css" />
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/header.css" />
 
-    <!-- Scripts -->
-    <script src="JS/projects.js"></script>
-
+    <!-- Font styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,6 +44,12 @@
       <!-- Projects Filter -->
       <div class="projects-container">
         <nav id="myBtnContainer">
+          <button class="btn js-btn-all active">Show All</button>
+          <button class="btn js-btn-college">College</button>
+          <button class="btn js-btn-unreal">Unreal</button>
+          <button class="btn js-btn-blender">Blender</button>
+
+          <!-- Old Code
           <button class="btn active" onclick="filterSelection('all')">
             Show All
           </button>
@@ -58,109 +62,11 @@
           <button class="btn" onclick="filterSelection('blender')">
             Blender
           </button>
+          -->
         </nav>
 
         <!-- Projects Gallery Grid -->
-        <section class="project-grid">
-          <!-- Projects -->
-          <div class="column college">
-            <div class="project-image">
-              <a href="Projects/Trash.html">
-                <img src="Images/Projects/Trash/TrashBin1.png" alt="Trash" />
-              </a>
-            </div>
-            <div class="content">
-              <h4>
-                <a href="Projects/Trash.html"> Clean Cycle's Trash Bin </a>
-              </h4>
-              <p>A trash bin that can track and detect handmovements.</p>
-            </div>
-          </div>
-
-          <div class="column college">
-            <div class="project-image">
-              <a href="Projects/Database1.html">
-                <img
-                  src="Images/Projects/Database1/Login.jpeg"
-                  alt="Database"
-                />
-              </a>
-            </div>
-            <div class="content">
-              <h4>
-                <a href="Projects/Database1.html">
-                  Fantasy League Database Website
-                </a>
-              </h4>
-              <p>
-                A Database project that can create Baseball Game tourament with
-                your teams.
-              </p>
-            </div>
-          </div>
-
-          <div class="column blender">
-            <div class="project-image">
-              <a href="Projects/Donuts.html">
-                <img src="Images/Projects/Donuts/Donuts1.png" alt="3D-Models" />
-              </a>
-            </div>
-
-            <div class="content">
-              <h4><a href="Projects/Donuts.html"> Blender Donut Tray </a></h4>
-              <p>
-                A dounut Tray using all features from Blender including 3D
-                Modeling, lighting, and etc.
-              </p>
-            </div>
-          </div>
-
-          <div class="column blender">
-            <div class="project-image">
-              <a href="Projects/Sushi.html">
-                <img
-                  src="Images/Projects/Sushi/Basic_Sushi.png"
-                  alt="3D-Models"
-                />
-              </a>
-            </div>
-            <div class="content">
-              <h4><a href="Projects/Sushi.html"> Blender Sushi Platter </a></h4>
-              <p>
-                An arrangement of sushi platters and a soysause container that
-                is cartoony and enticing for viewers.
-              </p>
-            </div>
-          </div>
-
-          <div class="column unreal">
-            <div class="project-image">
-              <a href="Projects/Pixel1.html">
-                <img src="blank" alt="Pixel" />
-              </a>
-            </div>
-            <div class="content">
-              <h4><a href="Projects/Pixel1.html"> Unreal Project #1 </a></h4>
-              <p>
-                Create a 2D Pixel Platform videogame in Unreal Engine. Check out
-                the link on <a href="Ichio"> Ichio </a> .
-              </p>
-            </div>
-          </div>
-          <div class="column unreal">
-            <div class="project-image">
-              <a href="Projects/Card.html"> <img src="blank" alt="Card" /> </a>
-            </div>
-            <div class="content">
-              <h4><a href="Projects/Card.html"> Unreal Project #2 </a></h4>
-              <p>
-                Create a Story Card Game that can be play with other players and
-                even play with a Bot. Please check it out on my game account.
-              </p>
-            </div>
-          </div>
-          <!-- Add more projects!!! -->
-        </section>
+        <section class="project-grid js-project-grid"></section>
 
         <!-- Add possibly my credentials for easier access to contacts. -->
         <aside class="aside-page">
@@ -202,9 +108,11 @@
         </aside>
       </div>
     </main>
-
     <footer>
       <p>&copy; Vianey Rivera's Portfolio 2025</p>
     </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="JS/projects.js"></script>
   </body>
 </html>

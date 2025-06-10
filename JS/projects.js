@@ -1,36 +1,60 @@
-function filterSelection(c) {
-  var x = document.getElementsByClassName("column");
-  if (c === "all") { c = ""; }
-  for (var i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (c === "" || x[i].classList.contains(c)) {
-      w3AddClass(x[i], "show");
-    }
-  }
-}
+import { renderProjectGrid } from "./data/single-project.js";
 
-function w3AddClass(element, name) {
-  if(!element.classList.contains(name)) {
-    element.classList.add(name);
-  }
-}
 
-function w3RemoveClass(element, name) {
-  if(element.classList.contains(name)) {
-    element.classList.remove(name);
-  }
-}
+let types = ['all', 'college', 'unreal', 'blender'];
 
-window.onload = function() {
-  filterSelection("all");
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.querySelector(".btn.active");
-      if(current) { current.classList.remove("active"); }
-      this.classList.add("active")
+renderProjects();
+
+
+function renderProjects() {
+
+  renderProjectGrid();
+
+  function filterSelection(type) {
+    // Show projects that have the same button type
+    const list = document.querySelectorAll('.column');
+    list.forEach((project) => {
+      if (type === 'all' || project.classList.contains(type)) {
+        showProject(project, 'show');
+      } else {
+        removeProject(project, 'show');
+      }
     });
   }
+
+  // class = 'column type show'
+  function showProject(element, name) {
+    if(!element.classList.contains(name)) {
+      element.classList.add(name);
+    }
+  }
+  // class = 'column type'
+  function removeProject(element, name) {
+    if(element.classList.contains(name)) {
+      element.classList.remove(name);
+    }
+  }
+
+  // Start filter with all
+  filterSelection('all');
+
+ types.forEach((type) => {
+    const button = document.querySelector(`.js-btn-${type}`);
+    if(button) {
+      button.addEventListener('click', (event) => {
+        // Remove active class from buttons
+        types.forEach((t) => {
+          const btn = document.querySelector(`.js-btn-${t}`);
+          if(btn) { btn.classList.remove('active'); }
+        });
+
+        // Add the active class to button
+        button.classList.add('active');
+
+        // Filter projects
+        filterSelection(type);
+      });
+    } 
+  });
+
 };
