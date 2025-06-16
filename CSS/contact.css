@@ -15,6 +15,9 @@
     padding: 20px;
     border-radius: 10px;
 }
+#c-form h2 {
+    margin: 18px 0px;
+}
 #c-form h2, #c-form p {
     color: navy;
 }
@@ -32,6 +35,34 @@
 #c-form button:hover {
     background-color: rgba(0, 0, 128, 1);
 }
+.name-input, .email-input, .message-input {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.name-input {
+    width: 200px;
+}
+.email-input {
+    width: 300px;
+}
+.message-input {
+    resize: none;
+    height: 5em;
+    width: 35em;
+}
+
+@media (width < 1355px) {
+    .message-input {
+        width: 25em;
+    }
+}
+@media (width < 1050px) {
+    .message-input {
+        width: 20em;
+    }
+}
+
 #socials {
     background-color: #f1b7f3;
 }
